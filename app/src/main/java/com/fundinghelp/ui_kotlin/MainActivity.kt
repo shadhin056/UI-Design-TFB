@@ -43,7 +43,7 @@ class MainActivity : AppCompatActivity() {
         button.isEnabled = false
         Handler().postDelayed({
             button.isEnabled = true
-            button.hideProgress(R.string.progressRight)
+            button.hideProgress(R.string.balance)
         }, 3000)
     }
 
@@ -58,16 +58,14 @@ class MainActivity : AppCompatActivity() {
             progressColor = Color.WHITE
         }
         button.isEnabled = false
-
-
         Handler().postDelayed({
             button.isEnabled = true
 
             button.showDrawable(animatedDrawable) {
-                buttonTextRes = R.string.saved
+                buttonTextRes = R.string.balance
             }
             Handler().postDelayed({
-                button.hideDrawable(R.string.mixedBehaviour)
+                button.hideDrawable(R.string.tab)
             }, 2000)
         }, 3000)
     }

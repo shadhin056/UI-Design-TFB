@@ -16,7 +16,7 @@
             android:id="@+id/buttonProgressRightText"
             style="@style/DefaultButtonStyle"
             android:layout_marginTop="10dp"
-            android:text="Submit"
+            android:text="Tab For Balance"
             app:backgroundTint="#4CAF50"
              />
 
@@ -24,7 +24,7 @@
             style="@style/DefaultButtonStyle"
             android:id="@+id/buttonProgressMixed"
             android:layout_marginTop="10dp"
-            android:text="Mixed Behaviour"
+            android:text="Tab For Balance"
             app:backgroundTint="@color/pink"
              />
     </LinearLayout>

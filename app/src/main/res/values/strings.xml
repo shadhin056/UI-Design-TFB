@@ -2,7 +2,6 @@
     <string name="app_name">UI-kotlin</string>
 
     <string name="loading">Loading</string>
-    <string name="progressRight">Progress right</string>
-    <string name="saved">Saved</string>
-    <string name="mixedBehaviour">Mixed Behaviour</string>
+    <string name="balance">500.00 Taka</string>
+    <string name="tab">Tab for Balance</string>
 </resources>
