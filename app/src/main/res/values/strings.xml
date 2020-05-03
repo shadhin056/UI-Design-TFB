@@ -3,4 +3,6 @@
 
     <string name="loading">Loading</string>
     <string name="progressRight">Progress right</string>
+    <string name="saved">Saved</string>
+    <string name="mixedBehaviour">Mixed Behaviour</string>
 </resources>
