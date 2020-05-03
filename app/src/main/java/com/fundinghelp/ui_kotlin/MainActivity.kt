@@ -16,6 +16,16 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         buttonOne()
         buttonTwo()
+        buttonThree()
+    }
+
+    private fun buttonThree() {
+        btnCustom.attachTextChangeAnimator()
+        bindProgressButton(btnCustom)
+
+        btnCustom.setOnClickListener {
+            showCustom(btnCustom)
+        }
     }
 
     private fun buttonTwo() {
@@ -64,6 +74,23 @@ class MainActivity : AppCompatActivity() {
             button.showDrawable(animatedDrawable) {
                 buttonTextRes = R.string.balance
             }
+            Handler().postDelayed({
+                button.hideDrawable(R.string.tab)
+            }, 2000)
+        }, 3000)
+    }
+
+    private fun showCustom(button: Button) {
+
+        button.showProgress {
+            buttonTextRes = R.string.loading
+            progressColor = Color.WHITE
+        }
+        button.isEnabled = false
+        Handler().postDelayed({
+            button.isEnabled = true
+            button.text = "500 taka"
+
             Handler().postDelayed({
                 button.hideDrawable(R.string.tab)
             }, 2000)

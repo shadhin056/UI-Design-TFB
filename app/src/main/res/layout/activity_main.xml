@@ -12,7 +12,7 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-        <com.google.android.material.button.MaterialButton
+        <Button
             android:id="@+id/buttonProgressRightText"
             style="@style/DefaultButtonStyle"
             android:layout_marginTop="10dp"
@@ -20,9 +20,17 @@
             app:backgroundTint="#4CAF50"
              />
 
-        <com.google.android.material.button.MaterialButton
+        <Button
             style="@style/DefaultButtonStyle"
             android:id="@+id/buttonProgressMixed"
+            android:layout_marginTop="10dp"
+            android:text="Tab For Balance"
+            app:backgroundTint="@color/pink"
+             />
+
+        <Button
+            style="@style/DefaultButtonStyle"
+            android:id="@+id/btnCustom"
             android:layout_marginTop="10dp"
             android:text="Tab For Balance"
             app:backgroundTint="@color/pink"
